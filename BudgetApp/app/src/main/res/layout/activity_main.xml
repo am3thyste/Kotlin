@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/linear_layout"
+    android:gravity = "center">
+
+   <!--button to show date picker: -->
+
+    <Button
+        android:id="@+id/pickDateBtn"
+        android:text="Début"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <!--date display-->
+
+
+    <Button
+        android:id="@+id/pickDateBtn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fin" />
+
+    <TextView
+        android:id="@+id/dateTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="De"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/dateTv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/budgetPeriod"
+        android:layout_width="149dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="-90dp"
+        android:layout_toEndOf="@+id/pickDateBtn"
+        android:layout_toRightOf="@+id/pickDateBtn"
+        android:text="Créer/modifier période" />
+
+</LinearLayout >
